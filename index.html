@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#171b35">
+  <title>Happy Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+  <main class="birthday-page">
+    <aside class="left-column" aria-labelledby="birthday-title">
+      <div class="title-block"><p class="eyebrow">Card untuk anda<span>✦</span></p><h1 id="birthday-title">Selamat<br><em>Hari Jadi</em></h1><p class="name">【Name】</p></div>
+      <div class="wish-block"><p class="eyebrow">May you are great</p><p class="wish">Nothin else I could wish more than your happiness</p><p class="from">From 【Name】 <span>♡</span></p><button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false"><span aria-hidden="true">♫</span> Tap for chime</button></div>
+    </aside>
+    <section class="memory-stage" aria-label="Seven birthday memories">
+      <div class="gallery-window">
+        <div class="memory-gallery" id="memory-gallery" tabindex="0" aria-label="Seven birthday memories. Scroll up or down to explore them.">
+         
+      
+          <figure class="memory memory-img1"><img src="assets/images/img1.jpg" alt="image"><figcaption>wish/message</figcaption></figure>
+          <figure class="memory memory-img2"><img src="assets/images/img2.jpg" alt="image"><figcaption>wish/message</figcaption></figure>
+          <figure class="memory memory-img3"><img src="assets/images/img3.jpg" alt="image"><figcaption>wish/message</figcaption></figure>
+          <figure class="memory memory-img4"><img src="assets/images/img4.jpg" alt="image"><figcaption>wish/message</figcaption></figure>
+          <figure class="memory memory-img5"><img src="assets/images/img5.jpg" alt="image"><figcaption>wish/message</figcaption></figure>
+          <figure class="memory memory-img6"><img src="assets/images/img6.jpg" alt="image"><figcaption>wish/message</figcaption></figure>
+          <figure class="memory memory-img7"><img src="assets/images/img7.jpg" alt="image"><figcaption>wish/message</figcaption></figure>
+          <figure class="memory memory-img12 portrait-card"><video src="assets/video/vid1.mp4" muted playsinline preload="metadata" style="pointer-events: none;"><track kind="captions" src="assets/subtitles/Vid1.vtt" srclang="en" label="English"></video><div class="play-icon">▶</div><figcaption>wish/message</figcaption></figure>
+          <figure class="memory memory-img12 portrait-card"><video src="assets/video/vid2.mp4" muted playsinline preload="metadata" style="pointer-events: none;"><track kind="captions" src="assets/subtitles/Vid8.vtt" srclang="en" label="English"></video><div class="play-icon">▶</div><figcaption>wish/message</figcaption></figure>
+          <figure class="memory memory-img12 "><video src="assets/video/vid3.mp4" muted playsinline preload="metadata" style="pointer-events: none;"><track kind="captions" src="assets/subtitles/Vid1.vtt" srclang="en" label="English"></video><div class="play-icon">▶</div><figcaption>wish/message</figcaption></figure>
+          <figure class="memory memory-img12 "><video src="assets/video/vid4.mp4" muted playsinline preload="metadata" style="pointer-events: none;"><track kind="captions" src="assets/subtitles/Vid8.vtt" srclang="en" label="English"></video><div class="play-icon">▶</div><figcaption>wish/message</figcaption></figure>
+          <figure class="memory memory-letter" data-type="letter"><img src="assets/images/envelope.jpg" alt="A special letter"><div class="letter-content" hidden><h2>Kehadapan 【Name】,</h2><p>wish and letter.</p><p>From<br>【Name】</p></div><figcaption>Surat Hogwart</figcaption></figure>
+
+        </div>
+        <div class="center-glow" aria-hidden="true"></div>
+        <div class="scroll-cue" aria-hidden="true"><span>Swipe · scroll</span><b>↕</b></div>
+      </div>
+    </section>
+  </main>
+  <section class="image-viewer" id="image-viewer" role="dialog" aria-modal="true" aria-label="Expanded birthday photo" hidden>
+    <button class="viewer-close" id="viewer-close" type="button">← Back to scrolling</button>
+    <figure class="viewer-content"><video id="viewer-video" controls hidden></video><img id="viewer-image" src="" alt=""><div id="viewer-letter" class="viewer-letter" hidden></div><figcaption id="viewer-caption"></figcaption></figure>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>
